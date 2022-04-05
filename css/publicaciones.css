@@ -402,6 +402,7 @@ video {
   text-align: center;
   padding: 40px 15px;
   padding-right: 40px;
+  font-size: 15px;
   font-family: 'Segoe UI Historic', 'Segoe UI', Helvetica, Arial, sans-serif;
   position: relative;
 }
