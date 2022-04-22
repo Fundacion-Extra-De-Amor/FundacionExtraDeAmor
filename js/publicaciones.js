@@ -79,11 +79,11 @@ function addToCartClicked(event) {
     let post = button.parentElement.parentElement.parentElement;
     let title = post.getElementsByClassName("post-title")[0].innerText;
     let text = post.getElementsByClassName("post__text")[0].innerText;
-    let textOculto = post.getElementsByClassName("ocultar-texto")[0].innerText;
+    // let textOculto = post.getElementsByClassName("ocultar-texto")[0].innerText;
     let imageSrc = post.getElementsByClassName("post__image")[0].src;
     let date = post.getElementsByClassName("post_date")[0].innerText;
 
-    addItemToCart(title, text, textOculto, imageSrc, date);
+    addItemToCart(title, text,  imageSrc, date);
     const cart = document.getElementById("cart");
     cart.classList.add("show-cart");
         
@@ -103,7 +103,7 @@ function purchaseClicked() {
     }
 }
 
-function addItemToCart(title, text, textOculto, imageSrc, date) {
+function addItemToCart(title, text,  imageSrc, date) {
     let cartRow = document.createElement("div");
     cartRow.classList.add("cart-row");
     let cartItems = document.getElementsByClassName("cart-items")[0];
@@ -117,7 +117,7 @@ function addItemToCart(title, text, textOculto, imageSrc, date) {
   <div class="post-body">
       <span class="cart-item-date">${date}</span>
       <h3 class="cart-item-title">${title}</h3> 
-      <p class="cart-text cart-column">${text} ${textOculto}</p>
+      <p class="cart-text cart-column">${text} </p>
   </div>`;
     cartRow.innerHTML = cartRowContents;
     cartItems.append(cartRow);

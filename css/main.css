@@ -19,6 +19,7 @@ section[id] {
 body {
   margin: 0;
   padding: 0;
+  background-color: #f6f6f9;
 }
 
 /*!El encabezado de la pagina*/
@@ -210,6 +211,7 @@ body {
 
 .equipo {
   grid-area: equipo;
+  background-color: #fff;
  }
 
 .equipo .img-equipo {
