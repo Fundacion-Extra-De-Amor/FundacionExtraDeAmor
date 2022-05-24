@@ -79,7 +79,6 @@ function addToCartClicked(event) {
     let post = button.parentElement.parentElement.parentElement;
     let title = post.getElementsByClassName("post-title")[0].innerText;
     let text = post.getElementsByClassName("post__text")[0].innerText;
-    // let textOculto = post.getElementsByClassName("ocultar-texto")[0].innerText;
     let imageSrc = post.getElementsByClassName("post__image")[0].src;
     let date = post.getElementsByClassName("post_date")[0].innerText;
 
